@@ -38,7 +38,7 @@ const projectsData = [
   {
     image: image5,
     title: "Ice Cream Dream",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero suscipit adipisci deserunt nobis placeat sapiente quas, dolorum nihil, quae inventore similique reiciendis. Earum, eligendi ipsa dolore soluta at exercitationem doloribus?",
+    description: "Ice Cream Dream é um formulário desenvolvido durante o curso Formação Front-End na Udemy. Nele você pode criar a sua loja de sorvetes dos sonhos e planejá-la do seu modo. O Ice Cream Dreams foi desenvolvido, principalmente, para fins de consolidação de aprendizado a respeito de formulários HTML",
     technologies: ["HTML5", "CSS3"],
   },
 ]
