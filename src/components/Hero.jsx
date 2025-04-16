@@ -12,8 +12,8 @@ const Hero = () => {
         animate={{y: 0 ,opacity: 1}}
         transition={{duration: 0.8, delay: 0.2}}
         >
-          <img src={image} alt="Imagem de Mariana Amorim" className="w-[300px] cursor-pointer
-          rounded-full shadow-xl shadow-indigo-900 transition-all duration-600 hover:-translate-y-1 
+          <img src={image} alt="Imagem de Mariana Amorim" className="w-[300px]
+          rounded-full shadow-xl shadow-indigo-900 mt-5 md:mt-0 transition-all duration-600 hover:-translate-y-1 
           hover:scale-105 hover:shadow-2xl hover:shadow-indigo-600 md:w-[350px]"/>
         </motion.div>
 
@@ -24,10 +24,10 @@ const Hero = () => {
 
         className="flex max-w-[600px] flex-col items-center justify-center gap-3 text-center">
           <h1 className="bg-gradient-to-r from-blue-500 to-pink-500 pt-3 bg-clip-text text-transparent 
-          text-5xl font-light md:text-7xl">Mariana Amorim</h1>
+          text-5xl font-light md:text-7xl ">Mariana Amorim</h1>
           <h3 className="bg-gradient-to-r from-pink-500 to-blue-500 bg-clip-text text-transparent 
           text-2xl md:text-3xl">Front-end Developer</h3>
-          <p className="md:text-base text-pretty pt-6 text-md text-gray-300">
+          <p className="md:text-lg text-pretty pt-8 pb-6 text-md text-gray-300">
           Olá! Me chamo Mariana Amorim, atualmente tenho 17 anos e estudo desenvolvimento front-end desde os 13 anos!
           Sou muito curiosa e o que me motiva é sempre aprender mais e evoluir minhas habilidades. Quer conhecer mais sobre mim? 
           Role para baixo!

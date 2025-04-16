@@ -49,18 +49,7 @@ const Tech = () => {
           whileInView= "visible"
           transition={{duration: 0.5}}>
             <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">
-             <BiLogoJavascript className="cursor-pointer text-[80px] text-amber-800 hover:text-amber-300 transition-all
-             duration-600 hover:-translate-y-5 sm:text-[100px] md:text-[120px]"/>
-            </a>
-          </motion.div>
-
-          <motion.div
-          variants= {variants}
-          initial= "hidden"
-          whileInView= "visible"
-          transition={{duration: 0.5}}>
-            <a href="https://nodejs.org/en" target="_blank"> 
-              <BiLogoNodejs className="cursor-pointer text-[80px] text-green-700 hover:text-green-500 transition-all
+             <BiLogoJavascript className="cursor-pointer text-[80px] text-yellow-700 hover:text-amber-300 transition-all
              duration-600 hover:-translate-y-5 sm:text-[100px] md:text-[120px]"/>
             </a>
           </motion.div>

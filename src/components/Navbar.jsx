@@ -15,10 +15,13 @@ const Navbar = () => {
     justify-between border-b border-b-gray-700 bg-black/70 
     px-16 py-6 text-white backdrop-blur-md md:justify-evenly">
         <a href="#home" className="bg-gradient-to-r from-blue-500
-        to-pink-500 bg-clip-text text-transparent opacity-80 text-3xl 
-        font-semibold transition-all duration-300 hover:opacity-100">Mariana Amorim</a>
+        to-pink-500 bg-clip-text text-transparent opacity-80 text-3xl
+        font-semibold transition-all duration-300 hover:opacity-100">
+          <span className="block md:hidden">Mariana</span> {/* Exibe só "Mariana" no celular */}
+          <span className="hidden md:block">Mariana Amorim</span> {/* Exibe "Mariana Amorim" nas telas médias e maiores */}
+        </a>
 
-        <ul className="hidden md:flex gap-10">
+        <ul className="hidden md:flex gap-10 pr-5">
           <li>
             <a href="#home" className="cursor-pointer opacity-70 
             transition-all duration-300 hover:opacity-100">Home</a>

@@ -63,7 +63,7 @@ const ProjectCard = ({project}) => {
     <ScrollReveal>
       <div className="flex flex-col items-center gap-8 md:flex-row md:gap-24">
         
-        <img src={project.image} alt="" className="w-full cursor-pointer 
+        <img src={project.image} alt="" className="w-full
         rounded-2xl transition-all duration-400 hover:scale-105 md:w-[300px]"/>
 
         <div className="flex flex-col gap-5 ">
