@@ -83,30 +83,29 @@ const ProjectCard = ({project}) => {
           <Dialog.Portal>
             <Dialog.Overlay className="fixed inset-0 bg-black/60 backdrop-blur-sm" />
             <Dialog.Content className="fixed top-1/2 left-1/2 z-50 w-[90vw] max-w-2xl -translate-x-1/2 -translate-y-1/2 rounded-xl
-            bg-zinc-900 p-6 shadow-lg space-y-4 text-white flex flex-col items-center">
-
+             bg-zinc-900 p-6 shadow-lg shadow-zinc-900 space-y-4 text-white flex flex-col items-center">
+  
               <motion.div
                 initial={{ opacity: 0, scale: 0.9, y: 50 }}
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 transition={{ duration: 0.4 }}
-                className="fixed top-1/2 left-1/2 z-50 w-[90vw] max-w-2xl -translate-x-1/2 -translate-y-1/2 rounded-xl
-              bg-zinc-900 p-6 shadow-lg text-white space-y-4 flex flex-col items-center">
-
+                className="w-full space-y-4 flex flex-col items-center"
+              >
                 <Dialog.Title className="text-2xl font-semibold">{project.title}</Dialog.Title>
                 <img src={project.image} alt={project.title} className="rounded w-full max-h-[400px] object-contain"/>
 
                 <div className="flex gap-4 pt-4 border-t-1 border-gray-300">
-                  <a href={project.repo} target="_blank" rel="noopener noreferrer" className="bg-fuchsia-800 border-2 border-fuchsia-800 md:text-lg px-4 py-2 rounded
-                  hover:bg-transparent transition-all duration-400">
+                  <a href={project.repo} target="_blank" rel="noopener noreferrer" className="hover:bg-fuchsia-500 border-2 border-fuchsia-500 md:text-lg px-4 py-2 rounded
+                  bg-transparent shadow-sm shadow-fuchsia-500 transition-all duration-400">
                     Ver repositório
                   </a>
 
                   {project.site && (
-                    <a href={project.site} target="_blank" rel="noopener noreferrer" className="bg-violet-800 md:text-lg px-4 py-2 rounded
-                    hover:bg-transparent border-2 border-violet-800 transition-all duration-500">
+                    <a href={project.site} target="_blank" rel="noopener noreferrer" className="hover:bg-violet-500 md:text-lg px-4 py-2 rounded
+                    bg-transparent shadow-sm shadow-violet-500 border-2 border-violet-500 transition-all duration-500">
                       Ver Site
                     </a>
-                )}
+                  )}
                 </div>
 
                 <Dialog.Close className="cursor-pointer absolute top-4 right-4 text-white hover:text-violet-400 transition-all duration-200 text-2xl outline-0">
@@ -114,6 +113,7 @@ const ProjectCard = ({project}) => {
                 </Dialog.Close>
               </motion.div>
             </Dialog.Content>
+
           </Dialog.Portal>
         </Dialog.Root>
 

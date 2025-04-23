@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Typewriter } from 'react-simple-typewriter';
 import { BsGithub, BsInstagram, BsLinkedin, BsWhatsapp } from "react-icons/bs"
 import { BiMenu, BiX } from "react-icons/bi"
 
@@ -17,8 +18,34 @@ const Navbar = () => {
         <a href="#home" className="bg-gradient-to-r from-blue-500
         to-pink-500 bg-clip-text text-transparent opacity-80 text-3xl
         font-semibold transition-all duration-300 hover:opacity-100">
-          <span className="block md:hidden">Mariana</span> {/* Exibe só "Mariana" no celular */}
-          <span className="hidden md:block">Mariana Amorim</span> {/* Exibe "Mariana Amorim" nas telas médias e maiores */}
+   {/* NOME COM ANIMAÇÃO */}
+   <div className="text-3xl font-semibold bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text text-transparent min-w-[200px]">
+        {/* Mobile: só "Mariana" */}
+        <span className="block md:hidden">
+          <Typewriter
+            words={["</Mariana>"]}
+            loop={true}
+            cursor={true}
+            cursorStyle="|"
+            typeSpeed={100}
+            deleteSpeed={60}
+            delaySpeed={1500}
+          />
+        </span>
+
+        {/* Desktop: "Mariana Amorim" */}
+        <span className="hidden md:block">
+          <Typewriter
+            words={["</Mariana Amorim>"]}
+            loop={true}
+            cursor={true}
+            cursorStyle="|"
+            typeSpeed={100}
+            deleteSpeed={60}
+            delaySpeed={1500}
+          />
+        </span>
+      </div>
         </a>
 
         <ul className="hidden md:flex gap-10 pr-5">
