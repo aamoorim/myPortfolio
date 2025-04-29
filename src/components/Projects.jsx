@@ -54,21 +54,22 @@ const projectsData = [
   },
 ]
 
+// The children is basically the h1 of the const projects down there, which was passed as a child of Scroll Reveal
 const ScrollReveal = ({children}) => {
   return (
     <motion.div
     initial={{opacity: 0, y: 100}}
     whileInView={{opacity: 1, y: 0}}
     viewport={{once: true}}
-    transition={{duration: 0.8}}    
-    
-    >
+    transition={{duration: 0.8}}>
       {children}
     </motion.div>
   )
 
 }
 
+// The project card is the component that shows the image, title, description and technologies of each project
+// It also contains the dialog that shows the image, title and links to the repository and site of each project
 const ProjectCard = ({project}) => {
   return(
     <ScrollReveal>
